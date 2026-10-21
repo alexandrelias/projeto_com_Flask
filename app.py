@@ -16,3 +16,5 @@ def home_usuario(username):
 @app.route("/ola/<nome>")
 def ola_nome(nome = None):
     return render_template("ola.html", nome=nome)
+if __name__ == "__main__":
+    app.run(debug=False, port=5000) # executar o 'flask run' no terminal
